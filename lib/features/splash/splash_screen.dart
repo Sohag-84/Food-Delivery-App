@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constant/image_path.dart';
+import 'package:food_delivery/constant/utils.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,9 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(logo,height: 200,width: 180),
+            Image.asset(logo, height: 200, width: 180),
             const SizedBox(height: 100),
-            const CircularProgressIndicator(strokeWidth: 5),
+            loader(),
           ],
         ),
       ),
